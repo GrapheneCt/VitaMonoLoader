@@ -14,7 +14,7 @@ Only Windows is supported.
 - ```<UnitySupportExtractPath>/Tools``` (where mono-xcompiler.exe is located)
 ### Compiling C# code
 1. Compile your C# code to managed .dll by executing: ```mcs -sdk:2 -target:library -out:<MyDllName>.dll <MySrcName>.cs```
-2. Compile your managed .dll to AOT assembly .s be executing: ```mono-xcompiler.exe --aot=full,asmonly,nodebug,static <MyDllName>.dll```
+2. Compile your managed .dll to AOT assembly .s by executing: ```mono-xcompiler.exe --aot=full,asmonly,nodebug,static <MyDllName>.dll```
 ### Using AOT assembly on PSP2
 1. Copy managed .dll file to ```app0:Media/Managed```
 2. Add AOT assembly .s file as compilation target in your PSP2 self project
