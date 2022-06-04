@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VitaMonoLoader", "VitaMonoLoader\VitaMonoLoader.vcxproj", "{41DF909E-7E07-48AB-992D-65305319FB8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D69C36D-8AEF-4223-84FC-8AC64433251A} = {3D69C36D-8AEF-4223-84FC-8AC64433251A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VMLCoreAssemblies", "VMLCoreAssemblies\VMLCoreAssemblies.vcxproj", "{3D69C36D-8AEF-4223-84FC-8AC64433251A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VMLVita2D", "VMLVita2D\VMLVita2D.vcxproj", "{D4FAC2AA-6F79-4B43-A131-6594BC0C684E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VML_Sample1", "VML_Sample1\VML_Sample1.vcxproj", "{C083305C-C304-4D18-A98F-A380D1F03C5B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41DF909E-7E07-48AB-992D-65305319FB8E} = {41DF909E-7E07-48AB-992D-65305319FB8E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|PSVita = Debug|PSVita
+		Release|PSVita = Release|PSVita
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41DF909E-7E07-48AB-992D-65305319FB8E}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{41DF909E-7E07-48AB-992D-65305319FB8E}.Debug|PSVita.Build.0 = Debug|PSVita
+		{41DF909E-7E07-48AB-992D-65305319FB8E}.Release|PSVita.ActiveCfg = Release|PSVita
+		{41DF909E-7E07-48AB-992D-65305319FB8E}.Release|PSVita.Build.0 = Release|PSVita
+		{3D69C36D-8AEF-4223-84FC-8AC64433251A}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{3D69C36D-8AEF-4223-84FC-8AC64433251A}.Debug|PSVita.Build.0 = Debug|PSVita
+		{3D69C36D-8AEF-4223-84FC-8AC64433251A}.Release|PSVita.ActiveCfg = Release|PSVita
+		{3D69C36D-8AEF-4223-84FC-8AC64433251A}.Release|PSVita.Build.0 = Release|PSVita
+		{D4FAC2AA-6F79-4B43-A131-6594BC0C684E}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{D4FAC2AA-6F79-4B43-A131-6594BC0C684E}.Debug|PSVita.Build.0 = Debug|PSVita
+		{D4FAC2AA-6F79-4B43-A131-6594BC0C684E}.Release|PSVita.ActiveCfg = Release|PSVita
+		{D4FAC2AA-6F79-4B43-A131-6594BC0C684E}.Release|PSVita.Build.0 = Release|PSVita
+		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Debug|PSVita.Build.0 = Debug|PSVita
+		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Release|PSVita.ActiveCfg = Release|PSVita
+		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Release|PSVita.Build.0 = Release|PSVita
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39992584-3FC3-44BC-9C20-FA23A50A85B0}
+	EndGlobalSection
+EndGlobal
