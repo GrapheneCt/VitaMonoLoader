@@ -14,12 +14,12 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sample1.dll.s">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Sample1.cs">
+    <None Include="Sample2.cs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Sample2.dll.s">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

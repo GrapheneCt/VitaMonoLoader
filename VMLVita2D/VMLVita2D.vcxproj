@@ -49,7 +49,12 @@
       <InstructionSet>ARM</InstructionSet>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>mono-vita_stub.a;-lvita2d_sys;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>-lSceFpu;mono-vita_stub.a;-lvita2d_sys;-lSceProcessmgr_stub;-lSceGxm_stub
+;-lSceGxmInternal_stub
+;-lSceGxmInternalForVsh_stub;-lSceGxmInternalForTest_stub;-lSceAppMgrUser_stub
+;-lSceGpuEs4User_stub
+;-lSceGpuEs4UserForVsh_stub
+;-lSceSysmodule_stub;-lScePvf_stub;-lSceDisplay_stub;-lSceDisplayUser_stub;-lSceCommonDialog_stub;-lSceSharedFb_stub;-lSceDmacmgr_stub;-lSceDbg_stub;-lSceFios2_stub_weak;-lScePgf_stub_weak;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SCE_PSP2_SDK_DIR)\target\lib\vdsuite;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -62,12 +67,27 @@
       <InstructionSet>ARM</InstructionSet>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>mono-vita_stub.a;-lvita2d_sys;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>-lSceFpu;mono-vita_stub.a;-lvita2d_sys;-lSceProcessmgr_stub;-lSceGxm_stub
+;-lSceGxmInternal_stub
+;-lSceGxmInternalForVsh_stub;-lSceGxmInternalForTest_stub;-lSceAppMgrUser_stub
+;-lSceGpuEs4User_stub
+;-lSceGpuEs4UserForVsh_stub
+;-lSceSysmodule_stub;-lScePvf_stub;-lSceDisplay_stub;-lSceDisplayUser_stub;-lSceCommonDialog_stub;-lSceSharedFb_stub;-lSceDmacmgr_stub;-lSceFios2_stub_weak;-lScePgf_stub_weak;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SCE_PSP2_SDK_DIR)\target\lib\vdsuite;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/vdsuite-pubprx.exe" --strip --compress "$(TargetPath)" "$(OutDir)_$(TargetFileName)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Vita2D.dll.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VMLVita2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vita2D.cs" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

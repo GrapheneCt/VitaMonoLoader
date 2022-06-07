@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C083305C-C304-4D18-A98F-A380D1F03C5B}</ProjectGuid>
+    <ProjectGuid>{59FD369B-EA52-476F-B91D-B757F11D2858}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'" Label="Configuration">
@@ -48,7 +48,7 @@
       <InstructionSet>ARM</InstructionSet>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>-lSceSysmodule_stub;$(OutDir)VitaMonoLoader_stub.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>-lSceSysmodule_stub;$(OutDir)VitaMonoLoader_stub.a;$(OutDir)VMLVita2D_stub.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
@@ -59,19 +59,17 @@
       <InstructionSet>ARM</InstructionSet>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>-lSceSysmodule_stub;$(OutDir)VitaMonoLoader_stub.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>-lSceSysmodule_stub;$(OutDir)VitaMonoLoader_stub.a;$(OutDir)VMLVita2D_stub.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sample1.dll.s">
+    <None Include="Sample2.cs" />
+    <ClCompile Include="Sample2.dll.s">
       <FileType>Document</FileType>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Sample1.cs" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

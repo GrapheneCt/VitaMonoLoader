@@ -17,6 +17,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VML_Sample1", "VML_Sample1\
 		{41DF909E-7E07-48AB-992D-65305319FB8E} = {41DF909E-7E07-48AB-992D-65305319FB8E}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VML_Sample2", "VML_Sample2\VML_Sample2.vcxproj", "{59FD369B-EA52-476F-B91D-B757F11D2858}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41DF909E-7E07-48AB-992D-65305319FB8E} = {41DF909E-7E07-48AB-992D-65305319FB8E}
+		{D4FAC2AA-6F79-4B43-A131-6594BC0C684E} = {D4FAC2AA-6F79-4B43-A131-6594BC0C684E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|PSVita = Debug|PSVita
@@ -39,6 +45,10 @@ Global
 		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Debug|PSVita.Build.0 = Debug|PSVita
 		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Release|PSVita.ActiveCfg = Release|PSVita
 		{C083305C-C304-4D18-A98F-A380D1F03C5B}.Release|PSVita.Build.0 = Release|PSVita
+		{59FD369B-EA52-476F-B91D-B757F11D2858}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{59FD369B-EA52-476F-B91D-B757F11D2858}.Debug|PSVita.Build.0 = Debug|PSVita
+		{59FD369B-EA52-476F-B91D-B757F11D2858}.Release|PSVita.ActiveCfg = Release|PSVita
+		{59FD369B-EA52-476F-B91D-B757F11D2858}.Release|PSVita.Build.0 = Release|PSVita
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
