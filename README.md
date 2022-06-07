@@ -12,6 +12,7 @@ Only Windows is supported.
 - ```<MonoInstallPath>/bin``` (where mono.exe is located)
 - ```<UnitySupportExtractPath>/Tools``` (where mono-xcompiler.exe is located)
 ### Installation (PSP2 side)
+1. Download and install [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker) plugin
 1. Copy ```Media``` folder from extracted Unity support installer to ```app0:```
 2. Copy ```machine.config``` from extracted Unity support installer to ```app0:Media/Managed/mono/2.0```
 3. Copy modules from current release to ```app0:Media/Modules```
