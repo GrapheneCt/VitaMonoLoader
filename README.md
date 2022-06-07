@@ -25,5 +25,5 @@ Only Windows is supported.
 ```
 extern void** mono_aot_module_<MyDllName>_info;
 
-mono_aot_register_module(mono_aot_module_<MyDllName>_info);
+VMLRegisterAssembly(mono_aot_module_<MyDllName>_info);
 ```
