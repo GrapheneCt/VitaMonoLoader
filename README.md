@@ -14,6 +14,7 @@ Only Windows is supported.
 ### Installation (PSP2 side)
 1. Copy ```Media``` folder from extracted Unity support installer to ```app0:```
 2. Copy ```machine.config``` from extracted Unity support installer to ```app0:Media/Managed/mono/2.0```
+3. Copy modules from current release to ```app0:Media/Modules```
 ### Compiling C# code
 1. Compile your C# code to managed .dll by executing: ```mcs -sdk:2 -target:library -out:<MyDllName>.dll <MySrcName>.cs```
 2. Compile your managed .dll to AOT assembly .s by executing: ```mono-xcompiler.exe --aot=full,asmonly,nodebug,static <MyDllName>.dll```
