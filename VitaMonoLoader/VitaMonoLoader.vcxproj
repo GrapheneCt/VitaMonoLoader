@@ -71,7 +71,8 @@
       <AdditionalLibraryDirectories>$(SCE_PSP2_SDK_DIR)\target\lib\vdsuite;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/vdsuite-pubprx.exe" --strip --compress "$(TargetPath)" "$(OutDir)_$(TargetFileName)"</Command>
+      <Command>"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/vdsuite-pubprx.exe" --strip --compress "$(TargetPath)" "$(OutDir)_$(TargetFileName)"
+"$(SCE_PSP2_SDK_DIR)\host_tools\build\bin\vdsuite-libgen.exe" --output-kind VitasdkStub "$(SolutionDir)vitasdk_compat\VitaMonoLoader.yml" "$(OutDir)VitaMonoLoader_vitasdk_stub.a"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

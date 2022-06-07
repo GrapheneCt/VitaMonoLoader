@@ -1,0 +1,10 @@
+modules:
+  VitaMonoLoader:
+    nid: 0
+    libraries:
+      VitaMonoLoader:
+        nid: 0x8A67DAA7
+        functions:
+          VMLInitialize: 0x238EA12F
+          VMLRegisterAssembly: 0x5AEA7231
+          VMLRunMain: 0x7A91557D
