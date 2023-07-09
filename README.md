@@ -11,6 +11,7 @@ Only Windows is supported for host. VDS (SCE SDK) and vitasdk are supported for 
 3. Add following to your PATH enviroment variable:
 - ```<MonoInstallPath>/bin``` (where mono.exe is located)
 - ```<UnitySupportExtractPath>/Tools``` (where mono-xcompiler.exe is located)
+4. Add Mono ```headers``` from this repository to your SDK installation
 ### Installation (PSP2 side)
 1. Download and install [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker) plugin
 1. Copy ```Media``` folder from extracted Unity support installer to ```app0:```
