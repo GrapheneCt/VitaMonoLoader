@@ -122,7 +122,7 @@ and reduce the number of casts drastically.
 
 #ifdef HOST_WASM
 #define USE_WASM_BACKEND
-#elif defined (_POSIX_VERSION) || defined (__psp2__)
+#elif defined (_POSIX_VERSION) || defined (__psp2__) || defined(__vita__)
 #if defined (__MACH__) && !defined (USE_SIGNALS_ON_MACH)
 #define USE_MACH_BACKEND
 #else

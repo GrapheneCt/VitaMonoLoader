@@ -583,7 +583,7 @@ gboolean MONO_SIG_HANDLER_SIGNATURE (mono_chain_signal);
 #define MONO_RETURN_ADDRESS() MONO_RETURN_ADDRESS_N(0)
 
 
-#elif defined (__GNUC__) || defined(__psp2__)
+#elif defined (__GNUC__) || defined(__psp2__) || defined(__vita__)
 
 #define MONO_RETURN_ADDRESS_N(N) (__builtin_extract_return_addr (__builtin_return_address (N)))
 #define MONO_RETURN_ADDRESS() MONO_RETURN_ADDRESS_N(0)

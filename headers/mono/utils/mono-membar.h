@@ -21,7 +21,7 @@
  */
 //#define mono_compiler_barrier() asm volatile("": : :"memory")
 
-#if defined (TARGET_WASM) || defined(__psp2__)
+#if defined (TARGET_WASM) || defined(__psp2__) || defined(__vita__)
 
 static inline void mono_memory_barrier (void)
 {

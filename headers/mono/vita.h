@@ -1,11 +1,9 @@
 #ifndef __MONO_VITA_H__
 #define __MONO_VITA_H__
 
-#include <kernel.h>
-
 typedef struct MonoMainThreadParam {
 	char *name;
-	uintptr_t entry;
+	void *entry;
 	unsigned int stackSize;
 	unsigned int cpuAffinity;
 	unsigned int priority;
